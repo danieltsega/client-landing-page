@@ -3,6 +3,7 @@
 import clsx from "clsx";
 import { gsap } from "gsap";
 import { MoreVertical } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 export default function Navbar() {
@@ -58,10 +59,17 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between px-5 py-3 md:px-7">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-amber-600 text-base font-bold text-white">
-                A
-              </div>
+            {/* Logo */}
+            <div className="relative shrink-0 p-2">
+              <Image
+                src="/logo-4.svg"
+                alt="Company Logo"
+                width={100}
+                height={100}
+                className="object-contain"
+                priority
+                sizes="54px"
+              />
             </div>
 
             {/* Desktop Links */}
