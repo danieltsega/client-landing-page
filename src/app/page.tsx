@@ -1,4 +1,5 @@
 import Hero from "@/components/sections/Hero";
+import Story from "@/components/sections/Story";
 import Navbar from "@/components/ui/Navbar";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="relative">
       <Navbar />
       <Hero />
+      <Story />
       {/* Keep your 5 test sections */}
       {[...Array(5)].map((_, i) => (
         <section
