@@ -67,7 +67,7 @@ export default function MissionSection() {
       {/* === CONTENT: No card, direct layout === */}
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         {/* === Mission List (mobile top) === */}
-        <div className="grid grid-cols-1 gap-4 order-1 md:order-2">
+        <div className="grid grid-cols-1 gap-4 order-2 md:order-2">
           {missions.map((item, i) => (
             <div
               key={i}
@@ -84,7 +84,7 @@ export default function MissionSection() {
         </div>
 
         {/* === Text === */}
-        <div className="space-y-5 text-gray-800 order-2 md:order-1 flex flex-col justify-center">
+        <div className="space-y-5 text-gray-800 order-1 md:order-1 flex flex-col justify-center">
           <h3 className="text-3xl md:text-6xl font-bold leading-[1.1] tracking-[-0.05em] md:tracking-[-0.08em] uppercase">
             OU
             <span className="relative inline-block">
