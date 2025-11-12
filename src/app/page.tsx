@@ -1,6 +1,7 @@
 import Company from "@/components/sections/Company";
 import Hero from "@/components/sections/Hero";
 import Story from "@/components/sections/Story";
+import Testimonials from "@/components/sections/Testimonials";
 import Navbar from "@/components/ui/Navbar";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Story />
       <Company />
+      <Testimonials />
       {/* <HorizontalScroll /> */}
       {/* <Vision /> */}
       {/* Keep your 5 test sections */}
